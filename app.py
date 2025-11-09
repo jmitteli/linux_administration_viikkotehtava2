@@ -26,6 +26,14 @@ def home():
 ███████╗  ███████╗ ██║ ╚═╝ ██║ ██║     
 ╚══════╝  ╚══════╝ ╚═╝     ╚═╝ ╚═╝     
 """
+    stack_ascii = r"""
+ ██████╗  ████████╗  █████╗    ██████╗  ██╗  ██╗
+██╔════╝  ╚══██╔══╝ ██╔══██╗  ██╔════╝  ██║ ██╔╝
+╚█████╗      ██║    ███████║  ██║       █████╔╝ 
+ ╚═══██╗     ██║    ██╔══██║  ██║       ██╔═██╗ 
+ █████╔╝     ██║    ██║  ██║  ╚██████╗  ██║  ██╗
+ ╚════╝      ╚═╝    ╚═╝  ╚═╝   ╚═════╝  ╚═╝  ╚═╝
+"""
 
     return f"""
     <html>
@@ -52,9 +60,10 @@ def home():
         <h1>Kotitehtävä 2</h1>
         <p>This page is running LEMP-stack on Nginx + MySQL + Flask!</p>
         <p><strong>MySQL-server time is:</strong> {db_time}</p>
-        <p><strong>MySQL server timezone is not set to Helsinki!!!!</strong></p>
+        <p><strong>This was fun!!!!</strong></p>
 
         <div class="ascii">{lemp_ascii}</div>
+        <div class="ascii-stack">{stack_ascii}</div>        
       </body>
     </html>
     """
