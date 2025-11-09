@@ -29,9 +29,10 @@ def home():
         <title>LEMP-demo</title>
       </head>
       <body style="font-family: Arial; margin: 40px;">
-        <h1>Tervetuloa Mikon LEMP-sivulle!</h1>
-        <p>Tämä sivu pyörii Flask + Gunicorn + Nginx -kombolla.</p>
-        <p><strong>MySQL-palvelimen kellonaika:</strong> {db_time}</p>
+        <h1>Welcome to my LEMP-page!</h1>
+        <p>This page is running LEMP-stack on Nginx + MySQL + Flask!</p>
+        <p><strong>MySQL-server time is:</strong> {db_time}</p>
+        <p><strong>MySQL server timezone is not set to Helsinki!!!!</p>
       </body>
     </html>
     """
