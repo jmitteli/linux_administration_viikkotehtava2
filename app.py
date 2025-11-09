@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    # Connecting to MySQL/MariaDB server
+    # Yhdistetään MySQL/MariaDB:hen
     conn = mysql.connector.connect(
         host="localhost",
         user="exampleuser",
@@ -26,6 +26,7 @@ def home():
 ███████╗  ███████╗ ██║ ╚═╝ ██║ ██║     
 ╚══════╝  ╚══════╝ ╚═╝     ╚═╝ ╚═╝     
 """
+
     stack_ascii = r"""
  ██████╗  ████████╗  █████╗    ██████╗  ██╗  ██╗
 ██╔════╝  ╚══██╔══╝ ██╔══██╗  ██╔════╝  ██║ ██╔╝
@@ -43,15 +44,23 @@ def home():
           body {{
             font-family: Arial, sans-serif;
             margin: 40px;
-            background-color: #f2f2f2; /* vaaleanharmaa tausta */
+            background-color: #f2f2f2;
           }}
-          .ascii {{
+          .ascii-lemp {{
             font-family: monospace;
             font-size: 18px;
-            font-weight: 900; /* paksumpi */
+            font-weight: 900;
             line-height: 1.1;
             white-space: pre;
             margin-top: 24px;
+          }}
+          .ascii-stack {{
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.1;
+            white-space: pre;
+            margin-top: 4px;
           }}
         </style>
       </head>
@@ -60,10 +69,10 @@ def home():
         <h1>Kotitehtävä 2</h1>
         <p>This page is running LEMP-stack on Nginx + MySQL + Flask!</p>
         <p><strong>MySQL-server time is:</strong> {db_time}</p>
-        <p><strong>This was fun!!!!</strong></p>
+        <p><strong>MySQL server timezone is not set to Helsinki!!!!</strong></p>
 
-        <div class="ascii">{lemp_ascii}</div>
-        <div class="ascii-stack">{stack_ascii}</div>        
+        <div class="ascii-lemp">{lemp_ascii}</div>
+        <div class="ascii-stack">{stack_ascii}</div>
       </body>
     </html>
     """
