@@ -69,7 +69,7 @@ def home():
         <h1>Kotitehtävä 2</h1>
         <p>This page is running LEMP-stack on Nginx + MySQL + Flask!</p>
         <p><strong>MySQL-server time is:</strong> {db_time}</p>
-        <p><strong>MySQL server timezone is not set to Helsinki!!!!</strong></p>
+        <p><strong>THIS WAS FUN ENJOY THE ASCII ART!!!!</strong></p>
 
         <div class="ascii-lemp">{lemp_ascii}</div>
         <div class="ascii-stack">{stack_ascii}</div>
